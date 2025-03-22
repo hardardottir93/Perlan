@@ -8,6 +8,8 @@ Shuffler
 And when run, returns a shuffled deck of cards. No inputs, only output.
  */
 
-List<int> ShuffledDeck(){
-return [];
+List ShuffledDeck(){
+  List deck = DeckOfCards();
+  deck.shuffle();
+  return deck;
 }
