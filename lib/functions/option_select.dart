@@ -6,7 +6,7 @@ Create a function called OptionSelect which takes in a list of options,
 prints them out to the user and asks for the user to select an option.
 
 It should then print something like
-
+klkl
 List<String> options = ['BurgerKing', 'McDonalds'];
 int idx = OptionSelect('Where do you want to eat?', options );
 and returns the users answer.
