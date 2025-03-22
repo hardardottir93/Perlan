@@ -8,7 +8,7 @@ the first item in that list, and return said item. Check example code
 List<int> deck = [1, 2, 3, 4];
 int myCard = DealCard(deck);
 print(myCard); // Should print 1
-print(deck); // Should print [2, 3, 4]
+print(deck); // Should print [2, 3, 4] jbhgjgvj
 
  */
 
@@ -16,7 +16,7 @@ print(deck); // Should print [2, 3, 4]
 import 'package:BlackJack/functions/functions.dart';
 
 int DealCard(List<int> deck){
-  int myCard = ShuffledDeck().removeAt(0);
+  int myCard = deck.removeAt(0);
 
   print(myCard);
 return myCard;
