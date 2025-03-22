@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'score_function.dart';
 import 'card_namer.dart';
 
@@ -15,5 +17,24 @@ hand before showdown.)
 
  */
 void Status(List<int> playerHand, List<int> houseHand){
+  print('Players hand: ');
+  stdout.write('{');
+  for(var card in playerHand) {
+    var currentCard = CardNamer(card);
+    stdout.write('$currentCard ');
+  }
+  stdout.write('} = ');
+  int playerScore = CalculateScore(playerHand);
+  stdout.write('$playerScore');
 
+
+  print('\nHouse hand: ');
+  stdout.write('{');
+  for(var card in houseHand) {
+    var currentCard = CardNamer(card);
+    stdout.write('$currentCard ');
+  }
+  stdout.write('} = ');
+  int houseScore = CalculateScore(houseHand);
+  stdout.write('$houseScore');
 }
