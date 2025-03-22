@@ -8,4 +8,6 @@ import 'package:BlackJack/lib.dart';
 
 void main() {
   Welcome();
+  print(DeckOfCards());
+  //PlaceBet(BuyIn());
 }
