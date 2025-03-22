@@ -25,5 +25,5 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
 
 
 int CalculateScore(List<int> hand){
-
+return 0;
 }

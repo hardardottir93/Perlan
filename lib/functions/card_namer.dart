@@ -6,5 +6,5 @@ it should return the name of the corresponding card (Ignore the suit)
  */
 
 String CardNamer(int i){
-
+return "";
 }
