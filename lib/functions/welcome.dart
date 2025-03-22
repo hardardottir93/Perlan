@@ -9,5 +9,6 @@ that has no input and simply prints a text.
 */
 
 void Welcome(){
-
+  print("... Welcome to this BlackJack game ...");
+  print("Get ready to lose all your money's!!!!");
 }
