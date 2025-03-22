@@ -40,25 +40,5 @@ int CalculateScore(List<int> hand){
     }
   }
 
-  /*var card1 = hand[0];
-  var card2 = hand[1];
-  var score = 0;
-
-  if(card1 > 1 && card1 <= 10) {
-    score = score + card1;
-  } else if(card1 == 1) {
-    score = score+11;
-  } else if(card1 >= 11 && card1 <= 13 ) {
-    score = score+10;
-  }
-
-  if(card2 > 1 && card2 <= 10) {
-    score = score + card1;
-  } else if(card2 == 1) {
-    score = score+1;
-  } else if(card2 >= 11 && card2 <= 13 ) {
-    score = score+10;
-  }*/
-
   return score;
 }
