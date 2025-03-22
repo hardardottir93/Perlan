@@ -17,6 +17,12 @@ print(hand); // Should print [1]
  */
 
 void DrawCard(List<int> hand, List<int> deck){
-  
+  if (deck.isNotEmpty) {
+    // Take the first card from the deck
+    int card = deck.removeAt(0);
+
+    // Add the card to the hand
+    hand.add(card);
+  }
 
 }
