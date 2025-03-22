@@ -25,7 +25,22 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
 
 
 int CalculateScore(List<int> hand){
-  var card1 = hand[0];
+  var score = 0;
+  var checkAce = true;
+  for(var i = 0; i < hand.length ; i++) {
+    if(hand[i] > 1 && hand[i] <= 10) {
+      score = score + hand[i];
+    } else if(hand[i] >= 11 && hand[i]<= 13 ) {
+      score = score+10;
+    }else if(hand[i] == 1 && checkAce == true) {
+      score = score + 11;
+      checkAce = false;
+    }else if(hand[i] == 1 && checkAce == false) {
+      score = score + 1;
+    }
+  }
+
+  /*var card1 = hand[0];
   var card2 = hand[1];
   var score = 0;
 
@@ -43,7 +58,7 @@ int CalculateScore(List<int> hand){
     score = score+1;
   } else if(card2 >= 11 && card2 <= 13 ) {
     score = score+10;
-  }
+  }*/
 
   return score;
 }
