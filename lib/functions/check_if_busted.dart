@@ -20,5 +20,8 @@ Example inputs
 
 
 bool CheckIfBusted(List<int> hand){
-return false;
+  int busted = CalculateScore(hand);
+  if(busted > 21){
+    return true;
+  } return false;
 }
