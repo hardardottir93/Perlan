@@ -7,9 +7,5 @@ import 'package:BlackJack/lib.dart';
  */
 
 void main() {
-<<<<<<< HEAD
   Welcome();
-=======
-  print(DeckOfCards());
->>>>>>> 7797c7644e2133adb6bbaf8f0214797cb00bb396
 }
