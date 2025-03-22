@@ -17,7 +17,6 @@ print(hand); // Should print [1]
  */
 
 void DrawCard(List<int> hand, List<int> deck){
-
-  dfdf
+  
 
 }
