@@ -16,7 +16,7 @@ print(deck); // Should print [2, 3, 4]
 import 'package:BlackJack/functions/functions.dart';
 
 int DealCard(List<int> deck){
-  int myCard = ShuffledDeck().removeAt(0);
+  int myCard = deck.removeAt(0);
 
   print(myCard);
 return myCard;
